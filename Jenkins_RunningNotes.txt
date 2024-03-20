@@ -1,0 +1,48 @@
+Jenkins-----20-March-2024
+===========
+Prereq:
+-------
+JDK11/17
+Jenkins.war--https://get.jenkins.io/war-stable/2.361.4/
+Maven--https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip
+Eclipse/STS--https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2024-03/R/eclipse-jee-2024-03-R-win32-x86_64.zip
+SonarQube Server(optional)
+Git
+Notepad++
+Github Account----Code repo
+Jav/SpringBoot App---demonistration
+Tomcat Server 8.0/8.5
+======================================
+>>We need to install required Plugins for the pipeline creations.
+>>Tools configuration in jenkins.
+
+>>>>The old name of Jenkins is Hudson Server.
+>>RED color on Jenkins Dashborad indicates Plugin failures.
+
+>>Eclipse/VSCODE/Intelli-j---push--->Git--Push--->Github----->SonarQube---->Jenkins---->Testing---->deploy code to Tomcat
+
+>>Jenkins can be started or installed using below ways.
+1)jenkins.war(for training and R&D)
+2)USing Docker/kubernetes jenkins image(recommended)https://hub.docker.com/r/jenkins/jenkins
+3)USing Webservers(recommended)
+4)On Cloud(recommended)
+5)jekins installer
+
+Note: Try to avoid installeers for Dev and PRod servers
+
+java -jar jenkins.war --httpPort=8199
+
+Port no is of 4 digits.
+
+In some organizations they wont allow port no which starts wwith 5,6,7,9.
+
+
+
+
+
+
+
+
+
+
+
