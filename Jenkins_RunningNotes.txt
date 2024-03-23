@@ -1,4 +1,4 @@
-Jenkins-----20-March-2024
+Jenkins-----20-March-2024-Day1
 ===========
 Prereq:
 -------
@@ -34,7 +34,191 @@ java -jar jenkins.war --httpPort=8199
 
 Port no is of 4 digits.
 
-In some organizations they wont allow port no which starts wwith 5,6,7,9.
+Rule:In some organizations they wont allow port no which starts wwith 5,6,7,9.
+
+>Installed Few Plugins:
+
+Maven Integration
+SonarQube
+Git
+Github
+MAtrix based authorization Service
+Delivery Pipeline
+>>Installing and Uninstalling of plugins.
+================================
+Day 2-21-March-2024
+------------------------
+>>jenkins will store plugin data and other data that is related to jenkins in ".jenkins" folder.
+>>For monitoring Jenkins we will use "Java Melody" Plugin.
+>>To design a S/w,we can design by following methodologies
+1)Waterfall approach---Older approach.There are some drawbacks in water fall ie mainly changes cannot be accomadated.
+2023---Sep-1
+2024-JAn-9---i want some changes in code
+
+Phases: Requirement Analysis--->Designing--->Coding----->testing---->Maintainance and Impl
+
+All legacy projects uses Waterfall.
+2)Agile
+3)Scrum
+>>>>
+FSD
+>>Automation: will reduce human involvement.Can we apply automation in development and Operations?
+
+>>In olden days--to deploy code to server,it takes min of 2 days to max 6 days.
+
+Automation: 1 hr
+
+>>DEVOPS came into  market.
+
+Devops is more about automation in development team and Operations teams.
+>>TAks of Operations Teams:
+============================
+>In some organizations dev team is also called as "IT team or devops team".
+>>Operations team might do below taks.
+Installing s/w,configuration of servers,policy creations,licensing,code deployments,monitoring of servers.....etc.
+>>DEVOPS is culture where 2 set of teams(dev and operations) work collabaratly to complete a task.
+>>DEVOPS=DEV+OPS
+Continous Integration---CI-----Bamboo,Jenkins
+Continous Deployment----CD---EmC2,AWS,GCP,Azure,heroku
+Continous Monitoring----CM----Appdynamics,Splunk,new relic,Data Dog..
+Continous Testing--------CT----Appium,Selenium,Testng,Junit...
+Containerization/virtualization-----Dockers,Openshift,Kubernetes
+
+One of the best compitetor for jenkins is BAMBOO.
+Sprint is a word which we use in Agile.
+
+In olden days to integrate new code with old code it takes days.Biut now due to CI tools,we can integrate the new code with old code with mins.
+>>Devops also reduces Infrastructure cost.
+
+To perform CI/CD/CT/CM in projects we need to use tools.
+
+Configuration Management:
+
+All the associates shld maintain same softwares with same versions.
+
+MAni--jfdk1.8
+Srini---jdk1.9 How an IT team install same s/w for all associates?
+sol)Config management tools
+
+Tools like Puppet,chef ,ansible,Salt....etc
+
+Through this tools,an Admin can sit at one location and can controll all associates Laptops and also he cn install/uninstall/debugg the softwares ata time.These are done though some python scripts.
+agent--s/w program
+
+Master(Puppet)--agent---Slaves
+S/w in backend.
+
+foreground
+python/groovy script--Write some puppet code snippet in python
+
+he need to run that script thru puppet---targeting the cluster
+
+>>in projects,u will ahve only 1 jenkins
+
+>>>>Configuring Maven,git and Jdk in Jenkins:
+------------------------------------------------
+==================
+Day3--22-March-2024
+----------------------
+>Running/Deleting a Jobs in jenkins---done
+>>Build History---done
+>Building a Sample Application----done
+>Security Setting in jenkins
+>Drawbacks in jenkins---done
+>Monitoring Jenkins
+
+java -jar jenkins.war -Dhudson.plugins.git.GitSCM.ALLOW_LOCAL_CHECKOUT=true
+
+>>before 2.3 version,instead of New Item,we are having "New Job"/
+Please read Item as job.
+
+>>Drawbacks in jenkins:
+=======================
+>Jenkins is useless wihout plugins.jenkins cannot work without plugings.
+>Jenkins cannt work independently.
+>In jenkins we cannt create bulk users.
+>Security features are less.
+>UI is not upto the market standards.
+>to create a Piple line,we need to learn grovy.that is learning curve is more.
+----------------
+>>In eclipse>>>Created Maven project>>Wrote the code
+>>clean install the project.
+>>we had initiated repo---git init
+>>git add *
+>>git commit -m "commit"
+>To check whether commit was done: git log
+Note: commit means saving code to git repository
+>>created New Itrem>>Source code Management>>Git-repository link>>Build Phase>>>Goals clean install>>>Save
+
+>>>Git is for local repo,In projects we will use Github repo.
+Github means cloud repo.
+
+We need to push code from git to github/Bitbucket/gitlab/AWS S3 bucket/GCp bucket.
+
+>>As a developer,we shld know how o push code to github.
+To push the code to Github,we can achive this in 2 ways.
+1)from CMD
+2)from IDE like eclipse...etc
+
+Code was written Eclipse---->Code was pushed to Git---->From git Code was pushed to Cloud Github---->SonarQube----->Jenkins---->TEst the Project------>Build
+
+https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.4.87374.zip?_gl=1*1ha7j5z*_gcl_au*MTIxNjIyNzc1OS4xNzA4MTg2NDQw*_ga*OTc5MjI5Mi4xNzA4MTg2NDQy*_ga_9JZ0GZ5TC6*MTcxMTA5MjQ0Ni4zLjEuMTcxMTA5MjU0My41NC4wLjA.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================
+Day4&5
+-----
+Pipeline Creation 
+Groovy Scripts
+CLI--Overview
+SonarQube Code Quality
+Tomcat Deployment
+Master Slave Architecture
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
